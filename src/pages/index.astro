@@ -1,5 +1,8 @@
 ---
-
+import '../styles/global.css';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+const pageTitle = "Home Page";
 ---
 
 <html lang="en">
@@ -8,25 +11,11 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>{pageTitle}</title>
 	</head>
 	<body>
-	<a href="/">Home</a>
-    <a href="/about/">About</a>
-	<a href="/projeto1/">Projeto1</a>
-
-		<h1>Este é o meu portfólio!</h1>
-		<h2>Projeto1</h2>
-		<p>Este projeto é bué fixe</p>
-		<h2>Projeto2</h2>
-		<p>Este tambem!</p>
-		<footer> <p>Obri por veres o meu porti <3 </p></footer>
-
-	</body>
+    <Navigation />
+    <h1>{pageTitle}</h1>
+    <Footer />
+  </body>
 </html>
-
-<style>
-	h1{
-		color: blue;
-	}
-</style>
