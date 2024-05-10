@@ -6,7 +6,7 @@ html {
   body {
     margin: 0 auto;
     width: 100%;
-    max-width: 1400px;
+    max-width: 1200px;
     padding: 2rem;
     line-height: 1.5;
   }
@@ -15,22 +15,34 @@ html {
     box-sizing: border-box;
   }
 
+  .inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+  }
+
   .logo {
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: bold;
     margin: 0;
   }
   
   h1 {
+    font-family: "Inter", sans-serif;
     margin: 1rem 0;
     color: #252525;
     font-size: 3.5rem;
   }
 
   a {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
     color: #252525;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
 
@@ -41,16 +53,15 @@ html {
 
 nav {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 
 .hamburger {
-  margin-top: 10px;
+  margin-top: 8px;
   cursor: pointer;
   justify-items: flex-end;
   flex-direction: column;
-  gap: 8px;
+  gap: 4px;
 }
 
 .hamburger .line {
@@ -65,12 +76,13 @@ nav {
   color: #252525;
   width: 100%;
   display: none;
-  margin: 24px 0;
+  margin: 80px 0;
 }
 
 .nav-links a {
   display: flex;
-  justify-content: flex-end;
+  align-self: center;
+  text-align: center;
   text-decoration: none;
 }
 
@@ -93,39 +105,82 @@ nav div {
 
  /* media queries */
 
-@media screen and (min-width: 600px) {
+ @media screen and (min-width: 450px) {
+
+  .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  h1 {
+    margin: 1rem 0;
+    color: #252525;
+    font-size: 3.5rem;
+  }
 
   a {
     color: #252525;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 2rem;
+  }
+
+  .hamburger {
+    margin-top: 11px;
+    cursor: pointer;
+    justify-items: flex-end;
+    flex-direction: column;
+    gap: 6px;
+  }
+  
+  .hamburger .line {
+    background-color: #252525;
+    width: 30px;
+    height: 4px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+}
+
+
+
+
+
+@media screen and (min-width: 700px) {
+
+  a {
+    color: #252525;
+    text-decoration: none;
+    font-size: .8rem;
   }
 
   .logo {
-    font-size: 1rem;
+    font-size: .8rem;
   }
 
   nav {
     display: flex;
     flex-direction: row;
     align-items: baseline;
+    justify-content: space-between;
+  }
+
+  nav div {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
   }
 
   .nav-links {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    background: none;
+    justify-content: space-between;
     margin: 0;
   }
 
   .nav-links a {
-    padding: 0 8px;
-  }
-
-  .nav-links-left, .nav-links-right {
-    display: flex;
-    flex-direction: row;
+    padding: 0 16px;
   }
 
   .hamburger {
