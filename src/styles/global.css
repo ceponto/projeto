@@ -6,9 +6,21 @@ html {
   body {
     margin: 0 auto;
     width: 100%;
-    max-width: 1200px;
     padding: 2rem;
+    max-width: 1200px;
     line-height: 1.5;
+  }
+
+  .headline {
+    width: 100%;
+    height: 72vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .headline h2 {
+    margin-top: 24px;
   }
   
   * {
@@ -32,9 +44,30 @@ html {
   
   h1 {
     font-family: "Inter", sans-serif;
-    margin: 1rem 0;
+    font-weight: 500;
+    font-size: 2.8rem;
+    line-height: 110%;
+    letter-spacing: -2px;
     color: #252525;
-    font-size: 3.5rem;
+    margin: 0;
+  }
+
+  h2 {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 110%;
+    letter-spacing: -2px;
+    color: #252525;
+    margin: 0;
+  }
+
+  p {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 110%;
+    color: #252525;
   }
 
   a {
@@ -46,15 +79,9 @@ html {
   }
 
 
+  /* MAIN NAV MOBILE*/
 
-
-
-  /* nav styles */
-
-nav {
-  display: flex;
-  justify-content: space-between;
-}
+  /*hamburger style*/
 
 .hamburger {
   margin-top: 8px;
@@ -72,6 +99,18 @@ nav {
   justify-content: flex-end;
 }
 
+  /* nav behaviour */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav div {
+  display: flex;
+  flex-direction: column;
+}
+
 .nav-links {
   color: #252525;
   width: 100%;
@@ -82,8 +121,6 @@ nav {
 .nav-links a {
   display: flex;
   align-self: center;
-  text-align: center;
-  text-decoration: none;
 }
 
 .nav-links a:hover,
@@ -95,17 +132,108 @@ nav {
   display: unset;
 }
 
-nav div {
+
+
+
+
+
+ /* CASE STUDIES */
+
+.casestudies {
+  padding: 0;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  gap: 24px;
+}
+.casestudies li {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  align-items: center;
+  overflow: hidden;
+}
+
+.casestudies li img {
+  width: 100%;
+  object-fit: cover;
+  grid-column: 1 / 5;
+  transition: 1s;
+  border-radius: 4px;
+}
+
+.casestudies li figcaption {
+  grid-column: 1 / 5;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: 1s;
+}
+
+.tags {
+  display: flex;
+  column-gap: 8px;
+  white-space: nowrap;
+  position: relative;
+}
+
+.tags p {
+  padding: 4px;
+  border-radius: 4px;
+  background-color: #F3F3F5;
+  font-size: .8rem;
+}
+
+.description a {
+  border: none;
+  border-radius: 4px;
+  background-color: #252525;
+  color: #FAFAFE;
+  padding: 16px 24px;
+  width: fit-content;
+  position: absolute;
+  top: 152px;
+  left: 0;
+  transform: translateX(660%);
+  transition: 1s;
+}
+
+.description p {
+  position: absolute;
+  top: 96px;
+  left: 0;
+  transform: translateX(160%);
+  transition: 1s;
+}
+
+/* OTHER PROJECTS */
+
+.otherprojects {
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.otherprojects li img {
+  height: 120px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.otherprojects figcaption p {
+  font-size: .8rem;
+  margin: 0;
 }
 
 
 
- /* media queries */
+ /* MEDIA QUERIES */
 
- @media screen and (min-width: 450px) {
+ /* mobile large */
+
+ @media screen and (min-width: 400px) {
 
   .logo {
     font-size: 2rem;
@@ -114,7 +242,6 @@ nav div {
   }
   
   h1 {
-    margin: 1rem 0;
     color: #252525;
     font-size: 3.5rem;
   }
@@ -141,13 +268,43 @@ nav div {
     justify-content: flex-end;
   }
 
+  .otherprojects figcaption p {
+    display: block;
+    margin: 0;
+  }
 }
 
 
 
+ /* desktop */
 
+@media screen and (min-width: 650px) {
 
-@media screen and (min-width: 700px) {
+  body {
+    padding: 0;
+  }
+
+  header {
+    position: sticky;
+    top: 0;
+    padding: 2rem;
+    background-color: #FAFAFE;
+    z-index: 1;
+  }
+
+  main,
+  footer {
+    padding: 0 2rem;
+    padding-left: 76px;
+  }
+
+  .headline {
+    width: 70%;
+    height: 72vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
   a {
     color: #252525;
@@ -159,32 +316,121 @@ nav div {
     font-size: .8rem;
   }
 
-  nav {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    justify-content: space-between;
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  p {
+    font-size: .8rem;
   }
 
   nav div {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
+    gap: 16px;
   }
 
   .nav-links {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0;
-  }
-
-  .nav-links a {
-    padding: 0 16px;
+    margin: 0 0 0 24px;
   }
 
   .hamburger {
     display: none;
   }
 
+  .casestudies {
+    list-style: none;
+    counter-reset: my-awesome-counter;
+    margin: 40px 0;
+    padding: 0;
+  }
+  .casestudies li {
+    counter-increment: my-awesome-counter;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    align-items: center;
+    transition: 1s;
+  }
+  .casestudies li::before {
+    content: "0" counter(my-awesome-counter);
+    font-size: 4rem;
+    line-height: 1;
+    text-align: end;
+  }
+
+  .casestudies li img {
+    height: 160px;
+    width: 100%;
+    object-fit: cover;
+    grid-column: 2 / 7;
+    transition: 1s;
+    border-radius: 4px;
+  }
+
+  .casestudies li figcaption {
+    grid-column: 7 / 11;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    transition: 1s;
+  }
+
+  .casestudies .tags {
+    display: flex;
+    column-gap: 16px;
+  }
+
+  .casestudies .tags p {
+    padding: 8px;
+    border-radius: 4px;
+    font-size: .8rem;
+    background-color: #F3F3F5;
+  }
+
+  .description a {
+    border: none;
+    border-radius: 4px;
+    background-color: #252525;
+    color: #FAFAFE;
+    padding: 16px 24px;
+    width: fit-content;
+    position: absolute;
+    top: 152px;
+    left: 0;
+    transform: translateX(660%);
+    transition: 1s;
+  }
+
+  .description p {
+    position: absolute;
+    top: 96px;
+    left: 0;
+    transform: translateX(160%);
+    transition: 1s;
+  }
+
+  .casestudies li:hover img {
+    height: 520px;
+  }
+
+/*
+
+.casestudies li:hover figcaption {
+  overflow: visible;
 }
+
+  .casestudies li:hover .description a,
+  .casestudies li:hover .description p {
+    transform: translateX(0);
+  }
+*/
+
+}
+  
