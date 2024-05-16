@@ -12,11 +12,19 @@ html {
   }
 
   .headline {
+    margin-top: 80px;
     width: 100%;
     height: 72vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+  
+  .headline,
+  .casestudies,
+  .otherprojects,
+  .misc {
+    margin-bottom: 80px;
   }
 
   .headline h2 {
@@ -216,8 +224,8 @@ nav div {
 }
 
 .otherprojects li img {
-  height: 120px;
   width: 100%;
+  height: 100%;
   object-fit: cover;
   border-radius: 4px;
 }
@@ -227,6 +235,27 @@ nav div {
   margin: 0;
 }
 
+/* MISC */
+
+.misc {
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.misc li {
+  grid-column: span 2;
+}
+
+.misc li img {
+  aspect-ratio: calc(1);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
 
 
  /* MEDIA QUERIES */
@@ -268,10 +297,6 @@ nav div {
     justify-content: flex-end;
   }
 
-  .otherprojects figcaption p {
-    display: block;
-    margin: 0;
-  }
 }
 
 
@@ -300,10 +325,6 @@ nav div {
 
   .headline {
     width: 70%;
-    height: 72vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
   }
 
   a {
@@ -345,9 +366,9 @@ nav div {
   .casestudies {
     list-style: none;
     counter-reset: my-awesome-counter;
-    margin: 40px 0;
     padding: 0;
   }
+
   .casestudies li {
     counter-increment: my-awesome-counter;
     font-size: 0.8rem;
@@ -359,7 +380,8 @@ nav div {
   }
   .casestudies li::before {
     content: "0" counter(my-awesome-counter);
-    font-size: 4rem;
+    font-size: 3.5rem;
+    font-weight: 300;
     line-height: 1;
     text-align: end;
   }
@@ -420,8 +442,16 @@ nav div {
     height: 520px;
   }
 
-/*
+  .casestudies h2 {
+    transition: all 1s;
+  }
 
+  .casestudies li:hover h2 {
+    font-size: 3.5rem;
+  }
+
+
+/*
 .casestudies li:hover figcaption {
   overflow: visible;
 }
@@ -431,6 +461,64 @@ nav div {
     transform: translateX(0);
   }
 */
+
+
+.otherprojects {
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 8px;
+}
+
+.otherprojects li img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+  aspect-ratio: calc(1);
+  transition: all 1s;
+}
+
+.otherprojects li {
+  grid-column: span 2;
+  transition: all 1s;
+}
+
+.otherprojects li p {
+  font-size: .8rem;
+  transition: all 1s;
+}
+
+.otherprojects li:hover p {
+  font-size: 1.2rem;
+}
+
+.otherprojects li:hover img {
+  height: 90%;
+  font-size: 1.2rem;
+}
+
+/* MISC */
+
+.misc {
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 8px;
+}
+
+.misc li {
+  grid-column: span 2;
+}
+
+.misc li img {
+  aspect-ratio: calc(1);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
 
 }
   
