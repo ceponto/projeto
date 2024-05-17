@@ -218,8 +218,8 @@ nav div {
 .otherprojects {
   padding: 0;
   list-style: none;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: row;
   gap: 8px;
 }
 
@@ -426,7 +426,7 @@ nav div {
     position: absolute;
     top: 152px;
     left: 0;
-    transform: translateX(660%);
+    transform: translateX(120%);
     transition: 1s;
   }
 
@@ -434,7 +434,7 @@ nav div {
     position: absolute;
     top: 96px;
     left: 0;
-    transform: translateX(160%);
+    transform: translateX(50%);
     transition: 1s;
   }
 
@@ -451,7 +451,6 @@ nav div {
   }
 
 
-/*
 .casestudies li:hover figcaption {
   overflow: visible;
 }
@@ -460,42 +459,31 @@ nav div {
   .casestudies li:hover .description p {
     transform: translateX(0);
   }
-*/
+
 
 
 .otherprojects {
   padding: 0;
   list-style: none;
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
+  display: flex;
+  flex-direction: row;
   gap: 8px;
 }
 
 .otherprojects li img {
   width: 100%;
+  height: 200px;
   object-fit: cover;
   border-radius: 4px;
-  aspect-ratio: calc(1);
-  transition: all 1s;
 }
 
 .otherprojects li {
-  grid-column: span 2;
+  width: 20%;
   transition: all 1s;
 }
 
-.otherprojects li p {
-  font-size: .8rem;
-  transition: all 1s;
-}
-
-.otherprojects li:hover p {
-  font-size: 1.2rem;
-}
-
-.otherprojects li:hover img {
-  height: 90%;
-  font-size: 1.2rem;
+.otherprojects li:hover {
+  width: 55%;
 }
 
 /* MISC */
