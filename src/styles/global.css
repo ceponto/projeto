@@ -86,6 +86,20 @@ html {
     font-size: 1.6rem;
   }
 
+  .tags {
+    display: flex;
+    column-gap: 8px;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  .tags p {
+    padding: 4px;
+    border-radius: 4px;
+    background-color: #F3F3F5;
+    font-size: .8rem;
+  }
+
 
   /* MAIN NAV MOBILE*/
 
@@ -147,93 +161,8 @@ nav div {
 
  /* CASE STUDIES */
 
-.casestudies {
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-.casestudies li {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-  align-items: center;
-  overflow: hidden;
-}
-
-.casestudies li img {
-  width: 100%;
-  object-fit: cover;
-  grid-column: 1 / 5;
-  transition: 1s;
-  border-radius: 4px;
-}
-
-.casestudies li figcaption {
-  grid-column: 1 / 5;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  transition: 1s;
-}
-
-.tags {
-  display: flex;
-  column-gap: 8px;
-  white-space: nowrap;
-  position: relative;
-}
-
-.tags p {
-  padding: 4px;
-  border-radius: 4px;
-  background-color: #F3F3F5;
-  font-size: .8rem;
-}
-
-.description a {
-  border: none;
-  border-radius: 4px;
-  background-color: #252525;
-  color: #FAFAFE;
-  padding: 16px 24px;
-  width: fit-content;
-  position: absolute;
-  top: 152px;
-  left: 0;
-  transform: translateX(660%);
-  transition: 1s;
-}
-
-.description p {
-  position: absolute;
-  top: 96px;
-  left: 0;
-  transform: translateX(160%);
-  transition: 1s;
-}
 
 /* OTHER PROJECTS */
-
-.otherprojects {
-  padding: 0;
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-}
-
-.otherprojects li img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 4px;
-}
-
-.otherprojects figcaption p {
-  font-size: .8rem;
-  margin: 0;
-}
 
 /* MISC */
 
@@ -363,10 +292,29 @@ nav div {
     display: none;
   }
 
+
+
+  
+
+  
+  .description a {
+    border: none;
+    border-radius: 4px;
+    background-color: #252525;
+    color: #FAFAFE;
+    padding: 16px 24px;
+    width: fit-content;
+  }
+  
+
+
   .casestudies {
     list-style: none;
     counter-reset: my-awesome-counter;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
   }
 
   .casestudies li {
@@ -375,15 +323,30 @@ nav div {
     margin-bottom: 0.5rem;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
+    column-gap: 16px;
     align-items: center;
-    transition: 1s;
+    transition: all 1s;
   }
+
+
   .casestudies li::before {
     content: "0" counter(my-awesome-counter);
     font-size: 3.5rem;
     font-weight: 300;
     line-height: 1;
     text-align: end;
+  }
+
+  .casestudies .tags {
+    display: flex;
+    column-gap: 16px;
+  }
+
+  .casestudies .tags p {
+    padding: 8px;
+    border-radius: 4px;
+    font-size: .8rem;
+    background-color: #F3F3F5;
   }
 
   .casestudies li img {
@@ -399,66 +362,40 @@ nav div {
     grid-column: 7 / 11;
     display: flex;
     flex-direction: column;
-    position: relative;
-    overflow: hidden;
     transition: 1s;
   }
 
-  .casestudies .tags {
+  .description {
     display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 0;
     column-gap: 16px;
+    height: 0;
+    overflow: hidden;
+    transition: all 1s;
   }
 
-  .casestudies .tags p {
-    padding: 8px;
-    border-radius: 4px;
-    font-size: .8rem;
-    background-color: #F3F3F5;
+  .casestudies li:hover .description {
+    height: 140px;
+    width: 100%;
+    transition: all 1s;
   }
 
-  .description a {
-    border: none;
-    border-radius: 4px;
-    background-color: #252525;
-    color: #FAFAFE;
-    padding: 16px 24px;
-    width: fit-content;
-    position: absolute;
-    top: 152px;
-    left: 0;
-    transform: translateX(120%);
-    transition: 1s;
-  }
 
-  .description p {
-    position: absolute;
-    top: 96px;
-    left: 0;
-    transform: translateX(50%);
-    transition: 1s;
-  }
+
+
+
+
+
+
+
+
 
   .casestudies li:hover img {
     height: 520px;
   }
 
-  .casestudies h2 {
-    transition: all 1s;
-  }
-
-  .casestudies li:hover h2 {
-    font-size: 3.5rem;
-  }
-
-
-.casestudies li:hover figcaption {
-  overflow: visible;
-}
-
-  .casestudies li:hover .description a,
-  .casestudies li:hover .description p {
-    transform: translateX(0);
-  }
 
 
 
@@ -485,6 +422,7 @@ nav div {
 .otherprojects li:hover {
   width: 55%;
 }
+
 
 /* MISC */
 
