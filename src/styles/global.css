@@ -22,7 +22,25 @@ html {
   
   .headline,
   section {
-    margin-bottom: 80px;
+    padding: 4rem 0;
+  }
+
+  main {
+    padding: 4rem 0;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  img {
+    border-radius: 8px;
+    object-fit: cover;
   }
   
   * {
@@ -69,7 +87,6 @@ html {
     font-family: "Inter", sans-serif;
     font-weight: 300;
     font-size: 1.2rem;
-    line-height: 110%;
     color: #252525;
   }
 
@@ -102,17 +119,6 @@ html {
     background-color: #252525;
     color: #FAFAFE;
     padding: 16px;
-    font-size: 1rem;
-    text-align: center;
-  }
-
-  .casestudies .cta {
-    display: none;
-    border: none;
-    border-radius: 4px;
-    background-color: #252525;
-    color: #FAFAFE;
-    padding: 8px;
     font-size: 1rem;
     text-align: center;
   }
@@ -216,9 +222,7 @@ nav div {
 .casestudies li img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
   transition: 1s;
-  border-radius: 4px;
 }
 
 .description p {
@@ -259,8 +263,6 @@ nav div {
 
 .otherprojects li img {
   width: 100%;
-  object-fit: cover;
-  border-radius: 4px;
 }
 
 
@@ -283,9 +285,25 @@ nav div {
   aspect-ratio: calc(1);
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  border-radius: 4px;
 }
+
+
+
+/* MISC PAGE */
+
+.misc_page_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.misc_page_grid img {
+  aspect-ratio: calc(1);
+  width: 100%;
+  height: 100%;
+}
+
+
 
 /*CASE STUDIES*/
 
@@ -339,7 +357,7 @@ nav div {
 
  /* desktop */
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 750px) {
 
   body {
     padding: 0;
@@ -355,7 +373,7 @@ nav div {
 
   main,
   footer {
-    padding: 0 2rem;
+    padding: 2rem;
     padding-left: 76px;
   }
 
@@ -391,16 +409,7 @@ nav div {
     width: fit-content;
   }
 
-  .casestudies .cta {
-    display: block;
-    border: none;
-    border-radius: 4px;
-    background-color: #252525;
-    color: #FAFAFE;
-    padding: 8px;
-    font-size: 1rem;
-    text-align: center;
-  }
+
 
 
 
@@ -474,10 +483,8 @@ nav div {
   .casestudies li img {
     height: 160px;
     width: 100%;
-    object-fit: cover;
     grid-column: 2 / 7;
     transition: 1s;
-    border-radius: 4px;
   }
 
   .casestudies li figcaption {
@@ -491,16 +498,17 @@ nav div {
     display: flex;
     flex-direction: column;
     position: relative;
+    margin-top: 0px;
     top: 0;
-    column-gap: 16px;
     height: 0;
     overflow: hidden;
     transition: all 1s;
   }
 
   .casestudies li:hover .description {
-    height: 160px;
+    height: 200px;
     width: 100%;
+    margin-top: 24px;
     transition: all 1s;
   }
 
@@ -523,8 +531,6 @@ nav div {
 .otherprojects li img {
   width: 100%;
   height: 200px;
-  object-fit: cover;
-  border-radius: 4px;
 }
 
 .otherprojects li {
@@ -557,8 +563,6 @@ nav div {
   aspect-ratio: calc(1);
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  border-radius: 4px;
 }
 
 /* FOOTER */
@@ -579,5 +583,8 @@ footer div {
   gap: 16px;
 }
 
+/* MISC PAGE */
+
+.misc_page_grid {
+  grid-template-columns: repeat(3, 1fr);
 }
-  
