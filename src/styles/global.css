@@ -634,14 +634,19 @@ aspect-ratio: calc(1);
     margin: 0;
   }
 
+}
 
 
-  /*desktop large*/
 
-  @media screen and (min-width: 1000px) {
+/*desktop large*/
+
+@media screen and (min-width: 1000px) {
   
-    details[open] {
-      height: 20rem;
-     }
-
+  details[open] {
+    height: 20rem;
   }
+
+}
+
+
+  
