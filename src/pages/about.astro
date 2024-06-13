@@ -3,9 +3,54 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = "About Me";
 ---
 <BaseLayout pageTitle={pageTitle}>
-<h2>... and my new Astro site!</h2>
+  <main>
+    <h1>Hello there! Welcome to my portfolio.</h1>
+    <p>My name is Carolina Cipriano and I’m a Product Designer with a background in Digital Design currently based in Lisbon.As a Product Designer I want to create purposeful experiences built upon data driven insights, constant iteration and consistent communication within a multidisciplinary environment.</p>
+    <h2>Nice to meet you!</h2>
+  
+  <section>
+    <li class="about_page_grid">
+      <img class="full_width_img" src="https://freight.cargo.site/t/original/i/2891a0ce3bee5b02645f1c57c7c560a956d22ae3dee7c8c2c3f63527b1c79b72/GENE_1.png"></img>
+      <img class="full_width_img" src="https://freight.cargo.site/t/original/i/2891a0ce3bee5b02645f1c57c7c560a956d22ae3dee7c8c2c3f63527b1c79b72/GENE_1.png"></img>
+    </li>
+  </section>
 
-    <p>I am working through Astro's introductory tutorial. This is the second page on my website, and it's the first one I built myself!</p>
+  <section>
+    <h2>What moves me?</h2>
+    <p>I’m a curious person and I often thrive in environments where research or learning new things is required or expected of me. Debating new ideas through talking to people is one of my favorite ways to learn!</p>
+    <p>In recent years I’m most interested in technology, psychology, philosophy, cooking and health. </p>
+  </section>
 
-    <p>This site will update as I complete more of the tutorial, so keep checking back and see how my journey is going!</p>
+  <section>
+    <h2>Why Product Design?</h2>
+    <p>In recent years, I've undergone a significant shift in my career trajectory, moving towards Product Design. This transition was driven by tree main personal needs</p>
+    <ul>
+      <li>
+      <details>
+          <summary><h3>Need for Purpose ↗</h3></summary>
+          <p>Through my professional journey as a Communication and Digital Designer in agency settings i often found that there was a lack of incentive for research and data-driven problem solving. This motivated me to pursue a career path where I could create more meaningful experiences grounded in these foundations.</p>
+        </details>
+      </li>
+      <li>
+        <details>
+            <summary><h3>Need for Deep Dives ↗</h3></summary>
+            <p>Secondly, I want to be able to work on the same problem for a long period of time, explore possibilities and reiterate old ideas, as a way to fully understand a product and its user base.</p>
+          </details>
+        </li>
+      <li>
+      <details>
+          <summary><h3>Need for Collaboration ↗</h3></summary>
+          <p>Thirdly, I truly believe that team work makes the dream work. Consistently communicating and working with others not only makes me thrive as a professional, but also makes me feel fulfilled and satisfied.</p>
+        </details>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Want to know more?</h2>
+    <p>Download my Resumé  to know more about my work experience, skills and education background.</p>
+    <p>Also, let’s chat! Add me on LinkedIn and send me a message or say Hi via Email!</p>
+  </section>
+
+  </main>
 </BaseLayout>
