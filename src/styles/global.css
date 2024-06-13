@@ -82,6 +82,11 @@
     font-weight: 300;
   }
 
+  footer div {
+    display: flex;
+    gap: 2rem;
+  }
+
   a {
     text-decoration: none;
   }
@@ -352,7 +357,13 @@ nav div {
 .misc_page_grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
+  gap: .5rem;
+}
+
+.misc_page_grid img,
+.about_page_grid img,
+.misc li img {
+aspect-ratio: calc(1);
 }
 
 
@@ -361,8 +372,8 @@ nav div {
 
 .about_page_grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
 }
 
 
@@ -575,12 +586,6 @@ nav div {
     grid-column: span 2;
   }
 
-  .misc_page_grid img,
-  .about_page_grid img,
-  .misc li img {
-  aspect-ratio: calc(1);
-  }
-
 
 
   /*CASE STUDIES PAGE*/
@@ -608,8 +613,12 @@ nav div {
 
   .misc_page_grid {
     grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
   }
 
+  .about_page_grid img {
+    aspect-ratio: inherit;
+  }
 
 
   /* FOOTER */
@@ -623,11 +632,6 @@ nav div {
 
   footer p {
     margin: 0;
-  }
-
-  footer div {
-    display: flex;
-    gap: 16px;
   }
 
 
