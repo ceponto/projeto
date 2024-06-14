@@ -1,14 +1,18 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: My First Blog Post 
-pubDate: 2022-07-01
-description: 'This is the first post of my new Astro blog.'
-author: 'Astro Learner'
+title: FBAUL Alumni Hub
+description: 'A space dedicated to strengthening the relationship between FBAUL and their alumni.'
+tag1: 'UX Research'
+tag2: 'Wireframing'
+tag3: 'Website'
+mainroles: Main Roles — Research, Wireframes
+teammates: Team Mates — Rita Costa, Sara Bicudo
+timeframe: Time Frame — 7 weeks
 image:
-    url: 'https://docs.astro.build/assets/full-logo-light.png'
+    url: 'https://freight.cargo.site/t/original/i/2891a0ce3bee5b02645f1c57c7c560a956d22ae3dee7c8c2c3f63527b1c79b72/GENE_1.png'
     alt: 'The full Astro logo.'
-tags: ["astro", "blogging", "learning in public"]
 ---
+
 Welcome to my _new blog_ about learning Astro! Here, I will share my learning journey as I build a new website.
 
 ## What I've accomplished
