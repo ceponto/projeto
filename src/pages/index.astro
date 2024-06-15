@@ -3,7 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = "Home Page";
 ---
 <BaseLayout pageTitle={pageTitle}>
-  <main>
+  <main id="homepage">
     <aside>
      <div class="headline">
         <h1>Hello!<br>I’m Carolina Cipriano, a Product Designer.</h1>
@@ -11,7 +11,7 @@ const pageTitle = "Home Page";
       </div>
     </aside>
 
-    <section>
+    <section id="casestudies">
       <h2>Case Studies</h2>
       <ol class="casestudies">
         <li>
@@ -46,7 +46,7 @@ const pageTitle = "Home Page";
         </li>
       </section>
 
-      <section>
+      <section id="otherprojects">
       <h2>Other Projects</h2>
       <ol class="otherprojects">
         <li>
@@ -64,20 +64,20 @@ const pageTitle = "Home Page";
         <li>
           <img src="https://freight.cargo.site/t/original/i/f9f01d617744c0bd24cd9a1139c2280cdaa81db01e03dbc86723a12b680634eb/bluedot.jpg"></img>
           <figcaption>
-            <a href="posts/ui_challenge/">Blue.Dot</a>
+            <a href="posts/bluedot/">Blue.Dot</a>
           </figcaption>
         </li>
         <li>
           <img src="https://freight.cargo.site/t/original/i/23d0899b2484bc86b6a1f7647d4e86a4152ce9672455e845b8d89d00fce25292/gene.jpg"></img>
           <figcaption>
-            <a href="posts/ui_challenge/">Gene</a>
+            <a href="posts/gene/">Gene</a>
           </figcaption>
         </li>
         
       </ol>
       </section>
 
-      <section>
+      <section id="misc">
       <h2>Misc</h2>
       <ol class="misc">
         <li><img src="https://freight.cargo.site/w/600/q/75/i/19553d647c8bc7c4f878c7092acbb37434db79bbe4c7209e278a12ff689f0868/Germinal-ezgif.com-optimize.gif"></img></li>
