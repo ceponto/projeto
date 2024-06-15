@@ -108,6 +108,7 @@
   details {
     transition: height .5s ease;
     overflow: hidden;
+    cursor: pointer;
   }
 
   details:not([open]) {

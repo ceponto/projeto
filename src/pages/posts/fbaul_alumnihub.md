@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
+layout: ../../layouts/ProjectsLayout.astro
 title: FBAUL Alumni Hub
 description: 'A space dedicated to strengthening the relationship between FBAUL and their alumni.'
 tag1: 'UX Research'
