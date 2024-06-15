@@ -101,6 +101,10 @@
     border-bottom: solid;
   }
 
+  details summary::-webkit-details-marker {
+    display:none;
+  }
+
   details {
     transition: height .5s ease;
     overflow: hidden;
@@ -318,7 +322,12 @@ nav div {
   display: flex;
   gap: var(--size-xxxxxs);
   overflow: scroll;
-  scrollbar-width: none;
+}
+
+.casestudies .tags::-webkit-scrollbar {
+  -webkit-appearance: none;
+    width: 0;
+    height: 0;
 }
 
 .casestudies .tags p {
