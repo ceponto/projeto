@@ -190,7 +190,7 @@
       "slnt" 0;
   }
 
-  h1, h2, h3, p, .notes li, .tags p
+  h1, h2, h3, p, .notes li, .tags p, li, a
    {
     font-family: var(--font);
     color: var(--dark-color);
@@ -232,6 +232,13 @@
     white-space: nowrap;
     position: relative;
     padding: var(--size-xxxs) 0;
+    overflow: scroll;
+  }
+
+  .tags::-webkit-scrollbar {
+    -webkit-appearance: none;
+      width: 0;
+      height: 0;
   }
 
   .notes li,
@@ -297,9 +304,8 @@ nav div {
 
 .nav-links {
   width: 100%;
-  height: 100vh;
   display: none;
-  padding-top: var(--size-xxxxl);
+  padding: var(--size-xxxxl) 0;
 }
 
 .nav-links a {
@@ -346,7 +352,8 @@ nav div {
 
 .casestudies li,
 .case_studies_content_2columns,
-.case_studies_content_1column {
+.case_studies_content_1column,
+.otherprojects li {
   padding: var(--size-xxxxxs);
   background-color: var(--shadow-color);
   border-radius: var(--size-xxxxxxxs);
@@ -356,12 +363,6 @@ nav div {
   display: flex;
   gap: var(--size-xxxxxs);
   overflow: scroll;
-}
-
-.casestudies .tags::-webkit-scrollbar {
-  -webkit-appearance: none;
-    width: 0;
-    height: 0;
 }
 
 .casestudies .tags p {
@@ -382,7 +383,6 @@ nav div {
 /* OTHER PROJECTS */
 
 .otherprojects {
-  padding: 0;
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -397,6 +397,10 @@ nav div {
 
 .otherprojects p {
   margin: 0;
+}
+
+.otherprojects li img {
+  height: 150px;
 }
 
 
@@ -652,6 +656,8 @@ aspect-ratio: calc(1);
   }
 
   .otherprojects li {
+    padding: 0;
+    background-color: transparent;
     width: 20.5%;
     transition: all 1s;
   }
