@@ -1,4 +1,4 @@
-  /*CSS VARIABLES*/
+/*CSS VARIABLES*/
   
 
   :root {
@@ -30,10 +30,8 @@
   }
   
   
-  
-  
-  
-  /*CSS*/
+
+/*CSS*/
   
   html {
     background-color: var(--light-color);
@@ -126,8 +124,8 @@
     }
 
 
-
-  /*FONTS*/
+    
+/*FONTS*/
 
   .logo,
   .nav-links a,
@@ -270,158 +268,152 @@
   }
 
 
-  /* MAIN NAV MOBILE*/
+/* MAIN NAV MOBILE*/
 
-  /*hamburger style*/
+/*hamburger style*/
 
-.hamburger {
-  margin-top: var(--size-xxxxxxxs);
-  cursor: pointer;
-  justify-items: flex-end;
-  flex-direction: column;
-  gap: var(--size-xxxxxxxxs);
-}
+  .hamburger {
+    margin-top: var(--size-xxxxxxxs);
+    cursor: pointer;
+    justify-items: flex-end;
+    flex-direction: column;
+    gap: var(--size-xxxxxxxxs);
+  }
 
-.hamburger .line {
-  background-color: var(--dark-color);
-  width: var(--size-xs);
-  height: var(--size-xxxxxxxxs);
-  display: flex;
-  justify-content: flex-end;
-}
+  .hamburger .line {
+    background-color: var(--dark-color);
+    width: var(--size-xs);
+    height: var(--size-xxxxxxxxs);
+    display: flex;
+    justify-content: flex-end;
+  }
 
-  /* nav behaviour */
+    /* nav behaviour */
 
-nav {
-  display: flex;
-  justify-content: space-between;
-}
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
 
-nav div {
-  display: flex;
-  flex-direction: column;
-}
+  nav div {
+    display: flex;
+    flex-direction: column;
+  }
 
-.nav-links {
-  width: 100%;
-  display: none;
-  padding: var(--size-xxxxl) 0;
-}
+  .nav-links {
+    width: 100%;
+    display: none;
+    padding: var(--size-xxxxl) 0;
+  }
 
-.nav-links a {
-  display: flex;
-  align-self: center;
-}
+  .nav-links a {
+    display: flex;
+    align-self: center;
+  }
 
-.expanded {
-  display: unset;
-}
-
-
+  .expanded {
+    display: unset;
+  }
 
 
 
+/* CASE STUDIES */
 
- /* CASE STUDIES */
+  .description p {
+    font-size: var(--size-xxxxxs);
+    margin: 0;
+  }
 
-.description p {
-  font-size: var(--size-xxxxxs);
-  margin: 0;
-}
+  .description {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: var(--size-xxxxxs);
+  }
 
-.description {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  gap: var(--size-xxxxxs);
-}
+  .casestudies {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-xl);
+  }
 
-.casestudies {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: var(--size-xl);
-}
+  .casestudies li {
+    margin-bottom: var(--size-xxxxxxxs);
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-xxxxxs);
+  }
 
-.casestudies li {
-  margin-bottom: var(--size-xxxxxxxs);
-  display: flex;
-  flex-direction: column;
-  gap: var(--size-xxxxxs);
-}
+  .casestudies li,
+  .case_studies_content_2columns,
+  .case_studies_content_1column,
+  .otherprojects li {
+    padding: var(--size-xxxxxs);
+    background-color: var(--shadow-color);
+    border-radius: var(--size-xxxxxxxs);
+  } 
 
-.casestudies li,
-.case_studies_content_2columns,
-.case_studies_content_1column,
-.otherprojects li {
-  padding: var(--size-xxxxxs);
-  background-color: var(--shadow-color);
-  border-radius: var(--size-xxxxxxxs);
-} 
+  .casestudies .tags {
+    display: flex;
+    gap: var(--size-xxxxxs);
+    overflow: scroll;
+  }
 
-.casestudies .tags {
-  display: flex;
-  gap: var(--size-xxxxxs);
-  overflow: scroll;
-}
+  .casestudies .tags p {
+    padding: var(--size-xxxxxxxs);
+    font-size: var(--size-xxxxxxs);
+    background-color: var(--secondary-shadow-color);
+  }
 
-.casestudies .tags p {
-  padding: var(--size-xxxxxxxs);
-  font-size: var(--size-xxxxxxs);
-  background-color: var(--secondary-shadow-color);
-}
-
-.casestudies li img {
-  transition: 1s;
-}
-
-
-
+  .casestudies li img {
+    transition: 1s;
+  }
 
 
 
 /* OTHER PROJECTS */
 
-.otherprojects {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: var(--size-m);
-}
+  .otherprojects {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-m);
+  }
 
-.otherprojects li {
-  display: flex;
-  flex-direction: column;
-  gap: var(--size-xxxxxs);
-}
+  .otherprojects li {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-xxxxxs);
+  }
 
-.otherprojects p {
-  margin: 0;
-}
+  .otherprojects p {
+    margin: 0;
+  }
 
-.otherprojects li img {
-  aspect-ratio: calc(2/1);
-}
+  .otherprojects li img {
+    aspect-ratio: calc(2/1);
+  }
 
 
 
 /* MISC */
 
-.misc {
-  padding: 0;
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: var(--size-xxxxxxxs);
-}
+  .misc {
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--size-xxxxxxxs);
+  }
 
-.misc li {
-  grid-column: span 2;
-}
+  .misc li {
+    grid-column: span 2;
+  }
 
 
 
-  /*CASE STUDIES PAGE*/
+/*CASE STUDIES PAGE*/
   
   .notes {
     display: grid;
@@ -451,31 +443,31 @@ nav div {
 
 /* MISC PAGE */
 
-.misc_page_grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: var(--size-xxxxxxxs);
-}
+  .misc_page_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--size-xxxxxxxs);
+  }
 
-.misc_page_grid img,
-.misc li img {
-aspect-ratio: calc(1);
-}
+  .misc_page_grid img,
+  .misc li img {
+  aspect-ratio: calc(1);
+  }
 
 
 
 /*ABOUT PAGE*/
 
-.about_page_grid {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: var(--size-xxxxxs);
-}
+  .about_page_grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: var(--size-xxxxxs);
+  }
 
 
- /* MEDIA QUERIES */
+/* MEDIA QUERIES */
 
- /* mobile large */
+/* mobile large */
 
  @media screen and (min-width: 400px) {
 
@@ -543,7 +535,6 @@ aspect-ratio: calc(1);
     font-size: var(--size-xxxs);
   }
 
-  
   a,
   .nav-links a,
   footer a,
@@ -569,18 +560,12 @@ aspect-ratio: calc(1);
     height: 30rem;
    }
 
-
-
-
-
-
   nav div {
     flex-direction: row;
     align-items: flex-end;
     gap: var(--size-xxxxxs);
   }
   
-
   .nav-links {
     height: auto;
     display: flex;
@@ -594,11 +579,6 @@ aspect-ratio: calc(1);
     display: none;
   }
 
-
-
-
-
-  
   .casestudies {
     counter-reset: my-awesome-counter;
     gap: var(--size-xxxs);
@@ -609,7 +589,6 @@ aspect-ratio: calc(1);
     font-size: .8rem;
     background-color: var(--shadow-color);
   }
-
 
   .casestudies li {
     background-color: transparent;
@@ -669,8 +648,6 @@ aspect-ratio: calc(1);
     height: 520px;
   }
 
-
-
   .otherprojects {
     padding: 0;
     list-style: none;
@@ -695,10 +672,6 @@ aspect-ratio: calc(1);
     width: 42%;
   }
 
-
-
-  /* MISC */
-
   .misc {
     padding: 0;
     list-style: none;
@@ -710,10 +683,6 @@ aspect-ratio: calc(1);
   .misc li {
     grid-column: span 2;
   }
-
-
-
-  /*CASE STUDIES PAGE*/
   
   .notes {
     display: grid;
@@ -732,10 +701,6 @@ aspect-ratio: calc(1);
     padding: var(--size-s);
   }
 
-  
-
-  /* MISC PAGE */
-
   .misc_page_grid {
     grid-template-columns: repeat(3, 1fr);
     gap: var(--size-xxxs);
@@ -745,9 +710,6 @@ aspect-ratio: calc(1);
     grid-template-columns: repeat(2, 1fr);
     gap: var(--size-xxxs);
   }
-
-
-  /* FOOTER */
 
   footer {
     padding: var(--size-m);
