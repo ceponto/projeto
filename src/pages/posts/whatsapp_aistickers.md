@@ -1,27 +1,18 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-const pageTitle = "Case Study";
+layout: ../../layouts/ProjectsLayout.astro
+title: WhatsApp AI Stickers
+description: 'A feature that allows users to easily send and create stickers based on their conversations and personalities.'
+tag1: 'Research'
+tag2: 'Wireframing'
+tag3: 'Mobile App'
+tag4: '2024'
+mainroles: Main Roles — Research, Wireframes
+teammates: Team Mates — Rita Costa, Sara Bicudo
+timeframe: Time Frame — 7 weeks
+image:
+    url: 'https://freight.cargo.site/t/original/i/498cda99399f42377593ed4cd3bbdd066bcb61306d00ccf2a52132ab8b7218a1/whatsapp_stickersapp_cover2.jpg'
+    alt: 'The full Astro logo.'
 ---
-<BaseLayout pageTitle={pageTitle}>
-<main>
-<h1>WhatsApp AI Stickers </h1>
-<div class="tags">
-    <p>Research</p>
-    <p>Wireframing</p>
-    <p>Mobile App</p>
-</div>
-
-<h3>A feature that allows users to easily send and create stickers based on their conversations and personalities.</h3>
-
-<ol class="notes">
-    <li>Main Roles — Research, Wireframes</li>
-    <li>Team Mates — Rita Costa, Sara Bicudo</li>
-    <li>Time Frame — 7 weeks</li>
-</ol>
-
-<section>
-    <img src="https://freight.cargo.site/t/original/i/498cda99399f42377593ed4cd3bbdd066bcb61306d00ccf2a52132ab8b7218a1/whatsapp_stickersapp_cover2.jpg"></img>
-</section>
 
 <section class="case_studies_content_2columns">
   <h2>Briefing Breakdown</h2>
@@ -261,6 +252,3 @@ const pageTitle = "Case Study";
 <section>
     <h1>Thank you for your time!</h1>
 </section>
-
-</main>
-</BaseLayout>
