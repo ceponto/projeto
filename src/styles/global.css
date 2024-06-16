@@ -231,6 +231,7 @@
     position: relative;
     padding: var(--size-xxxs) 0;
     overflow: scroll;
+    scrollbar-width: none;
   }
 
   .tags::-webkit-scrollbar {
