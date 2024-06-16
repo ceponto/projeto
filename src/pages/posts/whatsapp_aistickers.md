@@ -11,7 +11,7 @@ teammates: Team Mates — Rita Costa, Sara Bicudo
 timeframe: Time Frame — 7 weeks
 image:
     url: 'https://freight.cargo.site/t/original/i/498cda99399f42377593ed4cd3bbdd066bcb61306d00ccf2a52132ab8b7218a1/whatsapp_stickersapp_cover2.jpg'
-    alt: 'The full Astro logo.'
+    alt: 'Girl eating ramen talking to her friend on WhatsApp on her phone. Shes using the new ai sticker feature to communicate with her.'
 ---
 
 <section class="case_studies_content_2columns">
@@ -28,11 +28,11 @@ image:
             <p>Whats App is an instant messaging and voice-over-IP service owned by Meta. It allows users to send private text/voice messages, do audio/video calls, and share media for free to users all over the globe.</p>
             <p>With over 3 billion users worldwide it was easy to get trustworthy data from peer reviewed studies done on WhatsApp users.</p>
         </div>
-        <img src="https://freight.cargo.site/t/original/i/07ff21dd44336c91cef9592be19895ea0652a42f4a3def0c810047b9efaf6acd/whatsapp.jpg"></img>
+        <img src="https://freight.cargo.site/t/original/i/07ff21dd44336c91cef9592be19895ea0652a42f4a3def0c810047b9efaf6acd/whatsapp.jpg" alt="mom and daughter talking to eachother on whatsapp using stickers."></img>
 </section>
 
 <section class="case_studies_content_2columns">
-        <img src="https://freight.cargo.site/t/original/i/f54501b543b2cd7574025012ddcbd501e56b7e03af10914c76596938bd4e2292/stickers.jpg"></img>
+        <img src="https://freight.cargo.site/t/original/i/f54501b543b2cd7574025012ddcbd501e56b7e03af10914c76596938bd4e2292/stickers.jpg" alt="two friends talking to eachother on whatsapp using stickers."></img>
         <div>
             <h2>And what are stickers?</h2>
             <p>Stickers are small images or digital illustrations similar to emojis that exist on this type of apps. They can be sent and shared in online messages to express emotions and add a fun touch to conversations.</p>
@@ -81,7 +81,7 @@ image:
 </section>
 
 <section>
-    <img src="https://freight.cargo.site/t/original/i/70c0b8306bbd226a29ad6cf4ecc4c09a15a85b73a5d267083fab0f2c3664be04/timeline.jpg"></img>
+    <img src="https://freight.cargo.site/t/original/i/70c0b8306bbd226a29ad6cf4ecc4c09a15a85b73a5d267083fab0f2c3664be04/timeline.jpg" alt="timeline of the project"></img>
 </section>
 
 <section class="case_studies_content_2columns">
@@ -116,11 +116,11 @@ image:
       <h2>What were the insights that informed our solution?</h2>
       <p>Here are the main problems we pinpointed from the research we conducted previously.</p>
   </div>
-  <img src="https://freight.cargo.site/t/original/i/2193310b2a79c2fb47195b7ceb9fb479a63060c47ea3b662ea823d0f08d8e713/insights.jpg"></img>
+  <img src="https://freight.cargo.site/t/original/i/2193310b2a79c2fb47195b7ceb9fb479a63060c47ea3b662ea823d0f08d8e713/insights.jpg" alt="screenshots of the figjam file of the project showing our research."></img>
 </section>
 
 <section class="case_studies_content_2columns">
-    <img src="https://freight.cargo.site/t/original/i/a730a9a07c7f3e16ae293d1405a5319bfde27100bada20c6782cec133f2a2b9c/problems1.jpg"></img>
+    <img src="https://freight.cargo.site/t/original/i/a730a9a07c7f3e16ae293d1405a5319bfde27100bada20c6782cec133f2a2b9c/problems1.jpg" alt="mockup of the whatsapp sticker screen showing all the stickers available on whatsapp."></img>
       <ul>
         <li>
         <details>
@@ -144,7 +144,7 @@ image:
 </section>
 
 <section class="case_studies_content_2columns">
-  <img src="https://freight.cargo.site/t/original/i/772d949d2eb98fb6aaa53556bb2b2a010b49d5e9dea2346d4e9339a7ccedc408/problems2.jpg"></img>
+  <img src="https://freight.cargo.site/t/original/i/772d949d2eb98fb6aaa53556bb2b2a010b49d5e9dea2346d4e9339a7ccedc408/problems2.jpg" alt="mockup of the screen of a ai text-to-image genarating app"></img>
     <ul>
       <li>
       <details>
@@ -172,11 +172,11 @@ image:
       <h2>Our Solution? AI text-to-image!</h2>
       <p>AI technology allows users to generate images from descriptions (aka. prompts) that can be anything from a simple sentence, to an image, to a sketch etc.</p>
   </div>
-  <img src="https://freight.cargo.site/t/original/i/2e8f96797e9c102bdea5a2d2015d4b4a5315b58467040f43f545456136f094d3/solution.jpg"></img>
+  <img src="https://freight.cargo.site/t/original/i/2e8f96797e9c102bdea5a2d2015d4b4a5315b58467040f43f545456136f094d3/solution.jpg" alt="mockup of a screen of a ai text-to-image app"></img>
 </section>
 
 <section class="case_studies_content_2columns">
-  <img src="https://freight.cargo.site/t/original/i/1a9d6bb895b33e3ac7c2b53e018ff11d13378d53b5c42829a7e87e551336776c/solution2.jpg"></img>
+  <img src="https://freight.cargo.site/t/original/i/1a9d6bb895b33e3ac7c2b53e018ff11d13378d53b5c42829a7e87e551336776c/solution2.jpg" alt="mockup of the main feature of our solution"></img>
   <div>
       <h2>How is AI a good solution?</h2>
       <h3>Ease of use</h3>
@@ -192,11 +192,11 @@ image:
       <p>AI can sometimes generate unfiltered and improper content, even if the given prompt is not violating guidelines.</p>
       <p>AI algorithms have a big appetite for users personal data.</p>
   </div>
-  <img src="https://freight.cargo.site/t/original/i/cbc7ced8a549c5fc2e1de97364eb1067f87c9e8328666e62089feb2ace270062/aiproblems.jpg"></img>
+  <img src="https://freight.cargo.site/t/original/i/cbc7ced8a549c5fc2e1de97364eb1067f87c9e8328666e62089feb2ace270062/aiproblems.jpg" alt="ballon with censored stickers saying - Facebooks new ai generated stickers are lewd, rude and occasionally nude."></img>
 </section>
 
 <section class="prototype">
-    <img src="https://freight.cargo.site/t/original/i/1aca920d8795974081b4c9979dbd04e67ebbb7abea49425a91c9ea4628acb848/solution_cover.jpg"></img>
+    <img src="https://freight.cargo.site/t/original/i/1aca920d8795974081b4c9979dbd04e67ebbb7abea49425a91c9ea4628acb848/solution_cover.jpg" alt="mockup of our solution"></img>
     <a class="cta" href="https://www.figma.com/proto/c2olOAxiqFcUZvLFCz4MCj/AI-Stickers-Whatsapp?type=design&node-id=198-1919&t=RnlVOzofoCy7rq5N-1&scaling=min-zoom&page-id=1%3A2961&starting-point-node-id=198%3A1919&fuid=1298756427841681183" target="_blank">See Prototype</a>
 </section>
 
