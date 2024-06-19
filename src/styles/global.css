@@ -52,7 +52,7 @@
   body {
     margin: 0 auto;
     width: 100%;
-    padding: var(--size-xxxxxs);
+    padding: 0 var(--size-xxxxxs);
     max-width: 1200px;
     line-height: 1.5;
   }
@@ -79,6 +79,20 @@
 
   main {
     padding: var(--size-xxl) 0;
+    animation: fadeInAnimation ease-out .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(-200px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
   li,
@@ -151,7 +165,6 @@
 
   .nav-links a:hover,
   .nav-links a:focus,
-  a,
   details:focus,
   details:hover,
   summary h3:focus,
@@ -160,8 +173,8 @@
   footer a:hover,
   .logo:focus,
   .logo:hover,
-  .otherprojects a:focus,
-  .otherprojects a:hover {
+  a:focus,
+  a:hover {
     color: var(--highlight-color);
   }
 
@@ -266,6 +279,7 @@
   .cta:focus,
   .cta:hover {
     background-color: var(--highlight-color);
+    color: var(--light-color);
   }
 
 
@@ -641,7 +655,6 @@
 
   .casestudies li:hover .description {
     height: 200px;
-    width: 100%;
     margin-top: var(--size-xxxs);
   }
 
